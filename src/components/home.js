@@ -3,7 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function Home () {
 
-    const colors = ['#F9E2AF','#009FBD','#77037B'];
+    const images = ['slideshow1.jpg',
+                    'slideshow2.jpg',
+                    'slideshow3.jpg',
+                    'slideshow4.jpg'];
+
     const [index, setIndex] = useState(0);
     const delay = 5000;
     const timeoutRef = useRef(null);
@@ -20,7 +24,7 @@ export default function Home () {
         timeoutRef.current = setTimeout(
             () =>
                 setIndex((prevIndex) => 
-                prevIndex===colors.length -1 ? 0 : prevIndex + 1
+                prevIndex===images.length -1 ? 0 : prevIndex + 1
                 ),
             delay
         );
@@ -34,13 +38,13 @@ export default function Home () {
         <div id='homepageWrapper'>
             <div className='slideShow'>
                 <div className='slideShowSlider' style={{transform: `translate3d(${-index * 100}%, 0, 0)`}}>
-                    {colors.map((backgroundColor, index) => 
-                        <div className='slide' key={index} style={{backgroundColor}}></div>
+                    {images.map((_, idx) => 
+                        <img className={`slide ${index === idx ? "activeSlide" : ""}`} ket={idx} src={require(`../photos/homepage/${images[idx]}`)}/>
                     )}
                 </div>
 
                 <div className="slideShowDots">
-                    {colors.map((_, idx) => (
+                    {images.map((_, idx) => (
                         <div key={idx} 
                             className={`slideShowDot ${index === idx ? "active" : ""}`} 
                             onClick={() => {setIndex(idx)}}>
