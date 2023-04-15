@@ -19,7 +19,7 @@ export default function Navbar() {
     window.addEventListener('scroll', toggleNavbarTransparency);
 
     return (
-        <div id='navbar' style={{backgroundColor: `rgba(239, 215, 0, ${transparent ? '0.5' : '1'})`}}>
+        <div id='navbar' style={{backgroundColor: `rgba(0, 0, 0, ${transparent ? '1' : '0'})`}}>
             Navbar
         </div>
     );
