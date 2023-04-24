@@ -1,6 +1,9 @@
 import './homepage.css';
 import FullscreenSlider from '../components/fullscreenSlider';
 import ProductsSlider from '../components/productsSlider';
+import GridGallery from '../components/gridGallery';
+import { galleryItems } from '../data/galleryItems';
+import { latestItems } from '../data/latestItems';
 
 export default function Homepage () {
 
@@ -9,25 +12,20 @@ export default function Homepage () {
                     'slideshow3.jpg',
                     'slideshow4.jpg'];
 
-    const latest = ['latest1.jpg',
-                    'latest2.jpg',
-                    'latest3.jpg',
-                    'latest4.jpg',
-                    'latest5.jpg',
-                    'latest6.jpg',
-                    'latest7.jpg',
-                    'latest8.jpg',
-                    'latest9.jpg',
-                    'latest10.jpg',];
+    
 
    
     return(
         <div id='homepageWrapper'>            
             <FullscreenSlider images={images}/>   
 
-            <h2 id='latestProducts'>Latest products</h2>
+            <h2 id='latestProducts'>LATEST PRODUCTS</h2>
 
-            <ProductsSlider products={latest}/>           
+            <ProductsSlider products={latestItems}/> 
+
+            <h2>SHOP BY CATEGORY</h2>
+
+            <GridGallery galleryItems={galleryItems}/>          
         </div>
     );
 };

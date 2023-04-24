@@ -39,22 +39,31 @@ export default function ProductsSlider({products}) {
     },[dots])
 
     return(
-        <div className='slideShow latestSlideShow'>
-            <div className='slideShowSlider' style={{transform: `translate3d(${-productIndex * 100}%, 0, 0)`}}>
-                {products.map((_, idx) => (
-                    <div className='slide latestSlide' key={idx} style={{margin:`0 ${latestProductMargin}px`}}>
-                        <img className='latestImg' src={require(`../photos/latest/${products[idx]}`)}/>
-                    </div>
-                ))}
-            </div>
+        <div className='latestWrapper'>
 
-            <div className="slideShowDots latestProductsDots">
-            {dots.map((_, idx) =>
-                <div key={idx} 
-                    className={`slideShowDot dotsLatest ${productIndex === idx ? "active" : ""}`} 
-                    onClick={() => {setProductIndex(idx)}}>
+            <div className='slideShow latestSlideShow'>
+                <div className='slideShowSlider' style={{transform: `translate3d(${-productIndex * 100}%, 0, 0)`}}>
+                    {products.map((elem, idx) => (
+                        <div className='slide latestSlide' key={idx} style={{margin:`0 ${latestProductMargin}px`}}>
+                            <a href='/#' style={{textDecoration: 'none'}}>
+                                <img className='latestImg' src={require(`../photos/latest/${elem.path}`)}/>
+
+                                <p className='slideText'>{elem.text}</p>
+                                <p className='secondarySlideText'>{elem.secondaryText}</p>
+                                <p className='priceText'>{elem.price}</p>
+                            </a>
+                        </div>
+                    ))}
                 </div>
-            )}
+
+                <div className="slideShowDots latestProductsDots">
+                {dots.map((_, idx) =>
+                    <div key={idx} 
+                        className={`slideShowDot dotsLatest ${productIndex === idx ? "active" : ""}`} 
+                        onClick={() => {setProductIndex(idx)}}>
+                    </div>
+                )}
+                </div>
             </div>
         </div>
     );
