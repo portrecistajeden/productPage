@@ -1,12 +1,12 @@
 .gridGalleryWrapper {
-    height: 1400px;
+    height: 1600px;
 }
 
 .gridGallery {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-auto-rows: 250px;
-    width: 1000px;
+    grid-template-columns: repeat(4, 300px);
+    grid-auto-rows: 300px;
+    width: 1200px;
     margin: 0 auto;
 }
 

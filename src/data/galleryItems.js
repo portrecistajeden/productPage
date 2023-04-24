@@ -14,7 +14,7 @@ export const galleryItems = [{
     text: 'Lorem ipsum',
     href: '/#'
 },{
-    path: "photos/latest/latest2.jpg",
+    path: "photos/latest/latest5.jpg",
     aspect: 'a2x1',
     text: 'Lorem ipsum',
     href: '/#'
@@ -34,12 +34,12 @@ export const galleryItems = [{
     text: 'Lorem ipsum',
     href: '/#'
 },{
-    path: "photos/latest/latest5.jpg",
+    path: "photos/latest/latest2.jpg",
     aspect: 'a1x2',
     text: 'Lorem ipsum',
     href: '/#'
 },{
-    path: "photos/latest/latest2.jpg",
+    path: "photos/latest/latest4.jpg",
     aspect: 'a1x2',
     text: 'Lorem ipsum',
     href: '/#'
