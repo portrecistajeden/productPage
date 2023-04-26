@@ -24,7 +24,6 @@ export default function Homepage () {
 
     function useWindowSize() {
         // Initialize state with undefined width/height so server and client renders match
-        // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
         const [windowSize, setWindowSize] = useState({
           width: undefined,
           height: undefined,
@@ -44,7 +43,7 @@ export default function Homepage () {
           handleResize();
           // Remove event listener on cleanup
           return () => window.removeEventListener("resize", handleResize);
-        }, []); // Empty array ensures that effect is only run on mount
+        }, []); 
         return windowSize;
     }
    
@@ -58,11 +57,11 @@ export default function Homepage () {
                 <br/>↓
             </h1>
 
-            <h2 id='latestProducts'>LATEST PRODUCTS</h2>
+            <h2 id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>
 
             <ProductsSlider products={latestItems}/> 
 
-            <h2>SHOP BY CATEGORY</h2>
+            <h2>SHOP BY <span className='transparentText'>CATEGORY</span></h2>
 
             <GridGallery galleryItems={galleryItems}/>          
         </div>
