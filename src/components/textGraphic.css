@@ -1,0 +1,71 @@
+.textGraphicWrapper {
+    height: 400px;
+    min-height: 290px;
+    width: 70vw;
+    min-width: 600px;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.textGraphicWrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+}
+
+.textGraphicWrapper h2, .textGraphicWrapper h3, .aboutButton {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 0;
+}
+
+.textGraphicWrapper h2 {
+    bottom: 320px;
+    font-size: 4em;
+}
+
+.textGraphicWrapper h3 {
+    bottom: 300px;
+    font-size: 3em;
+}
+
+.aboutButton{
+    line-height: 60px;
+    display: block;
+    bottom: 250px;
+    height: 60px;
+    width: 160px;
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--font-color);
+    transition: 0.1s ease-out;
+}
+
+.aboutButton:hover {
+    bottom: 260px;
+    filter: opacity(0.8);
+}
+
+.hiddenTextGraphic {
+    transform: translate(-50%, 80%) rotate(-50deg);
+}
+
+.showTextGraphic {    
+    transition: 1s ease-out;
+}
+
+@media screen and (max-width: 1000px) {
+    .textGraphicWrapper h2 {
+        font-size: 3em;
+    }
+
+    .textGraphicWrapper h3 {
+        font-size: 2em;
+    }
+}

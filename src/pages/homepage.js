@@ -5,6 +5,8 @@ import GridGallery from '../components/gridGallery';
 import { galleryItems } from '../data/galleryItems';
 import { latestItems } from '../data/latestItems';
 import { useState, useEffect } from "react";
+import TextGraphic from '../components/textGraphic';
+import image from '../photos/latest/latest6.jpg'
 
 export default function Homepage () {
     
@@ -21,6 +23,8 @@ export default function Homepage () {
             behavior: 'smooth'
         });
     }
+
+    
 
     function useWindowSize() {
         // Initialize state with undefined width/height so server and client renders match
@@ -51,19 +55,22 @@ export default function Homepage () {
         <div id='homepageWrapper'>            
             <FullscreenSlider images={images}/>   
 
-            <h1 onClick={() => scrollDown(viewportSize.height)}>
+            <h1 className='openingHeader boldHeader' onClick={() => scrollDown(viewportSize.height)}>
                 <span className='transparentText'>MODERN</span> PHOTOGRAPHY
                 <br/>BEGINS <span className='transparentText'>HERE</span>
                 <br/>↓
             </h1>
 
-            <h2 id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>
+            <h2 className='homepageHeader' id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>
 
             <ProductsSlider products={latestItems}/> 
 
-            <h2>SHOP BY <span className='transparentText'>CATEGORY</span></h2>
+            <h2 className='homepageHeader'>SHOP BY <span className='transparentText'>CATEGORY</span></h2>
 
-            <GridGallery galleryItems={galleryItems}/>          
+            <GridGallery galleryItems={galleryItems}/>      
+
+            <TextGraphic imgSource={image}/>    
+
         </div>
     );
 };
