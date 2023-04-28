@@ -1,0 +1,33 @@
+{
+    "banner1": {
+        "firstLine": {
+            "normal": "THE FUJIFILM",
+            "transparent": "STORY"
+        },
+        "secondLine": {
+            "transparent": "TRULLY",        
+            "normal": "AWESOME"
+        },
+        "buttonText": "ABOUT"
+    },
+    "banner2": {
+        "firstLine": {
+            "normal": "THE FUJIFILM",
+            "transparent": "STORY"
+        },
+        "secondLine": {
+            "transparent": "TRULLY",        
+            "normal": "AWESOME"
+        },
+        "buttonText": "ABOUT"      
+    },
+    "blogPost1": {
+        "title": {
+            "normal": "LOREM ",
+            "transparent": "IPSUM"
+        },
+        "text": "In pharetra eu justo a malesuada. Morbi congue non sapien eget sagittis. Quisque ornare nisl in purus fermentum malesuada. Nulla aliquet accumsan sapien, sed luctus justo sodales vitae. Nunc diam eros, aliquam at nibh porttitor, suscipit venenatis justo. Integer accumsan elit risus, eu imperdiet velit cursus et. Duis porttitor eros vitae porttitor ornare. Mauris ac erat ac ligula posuere vulputate. Aliquam eu metus ultricies, ullamcorper eros non, finibus quam.",
+        "anchorText": "CLICK HERE PLEASE",
+        "anchorHREF": "/#"
+    }
+}

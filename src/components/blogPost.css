@@ -1,0 +1,82 @@
+.blogPostWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vw;
+    width: 85vw;
+    min-width: 820px;
+    margin: 0 auto 80px auto;
+    overflow: hidden;
+}
+
+.hiddenBlogPost {
+    transform: translate(-5%, 10%) rotate(-20deg);
+}
+
+.showBlogPost { 
+    transition: transform 1s ease-out; 
+}
+
+.blogPostImage {
+    width: 50vw;
+    height: 50vw;
+}
+
+.blogPostImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageFrame {
+    background-color: transparent;
+    border: 100vw solid var(--background-color);
+    position: absolute;
+    top: -100vw;
+}
+
+.frameLeft {
+    left: -100vw;
+}
+
+.frameRight {
+    right: -100vw;
+}
+
+
+.blogPostTextWrapper {
+    width: 30vw;
+    height: auto;
+    z-index: 1;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.blogPostText {
+    font-size: 1.2em;
+    font-weight: lighter;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.blogPostAnchor {
+    font-size: 1.4em;
+    color: var(--font-color)
+}
+
+@media screen and (max-width: 1200px) {
+    .blogPostText {
+        font-size: 1em;
+    }
+    .blogPostAnchor {        
+        font-size: 0.8em;
+    }
+}

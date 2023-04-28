@@ -5,8 +5,12 @@ import GridGallery from '../components/gridGallery';
 import { galleryItems } from '../data/galleryItems';
 import { latestItems } from '../data/latestItems';
 import { useState, useEffect } from "react";
-import TextGraphic from '../components/textGraphic';
-import image from '../photos/latest/latest6.jpg'
+import Banner from '../components/banner';
+import image6 from '../photos/latest/latest6.jpg';
+import image4 from '../photos/latest/latest4.jpg';
+import image9 from '../photos/latest/latest9.jpg';
+import texts from '../texts/homepageTexts.json';
+import BlogPost from '../components/blogPost';
 
 export default function Homepage () {
     
@@ -51,6 +55,7 @@ export default function Homepage () {
         return windowSize;
     }
    
+
     return(
         <div id='homepageWrapper'>            
             <FullscreenSlider images={images}/>   
@@ -69,8 +74,11 @@ export default function Homepage () {
 
             <GridGallery galleryItems={galleryItems}/>      
 
-            <TextGraphic imgSource={image}/>    
+            <Banner imgSource={image6} bannerWidth='70vw' bannerContent={texts.banner1} transparentWords={['STORY', 'TRULLY']}/>    
 
+            <BlogPost imgSource={image4} content={texts.blogPost1} photoOnLeft={true}/>
+
+            <BlogPost imgSource={image9} content={texts.blogPost1} photoOnLeft={false}/>
         </div>
     );
 };
