@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './navbar.css'
 import { Link } from 'react-router-dom';
+import logo from '../photos/logo/Fujifilm_logo_logotype.png';
 
 export default function Navbar() {
 
@@ -14,15 +15,17 @@ export default function Navbar() {
         else {
             setTransparent(false);
         }
-
     }
 
     window.addEventListener('scroll', toggleNavbarTransparency);
 
     return (
-        <div id='navbar' style={{backgroundColor: `rgba(0, 0, 0, ${transparent ? '1' : '0'})`}}>
-            Navbar
-            <Link to='/products'>Products</Link>
+        <div id='navbar'className={`${transparent ? 'visibleNavbar' : 'transparentNavbar'}`}>
+            <div className='linkContainer'>
+                <Link className='navlink' to='/'><img className='navbarLogo' src={logo}/></Link>
+                <Link className='navlink' to='/products'>PRODUCTS</Link>
+                <Link className='navlink' to='/about'>ABOUT</Link>
+            </div>
         </div>
     );
 }

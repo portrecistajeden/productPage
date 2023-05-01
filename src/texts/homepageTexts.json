@@ -29,5 +29,9 @@
         "text": "In pharetra eu justo a malesuada. Morbi congue non sapien eget sagittis. Quisque ornare nisl in purus fermentum malesuada. Nulla aliquet accumsan sapien, sed luctus justo sodales vitae. Nunc diam eros, aliquam at nibh porttitor, suscipit venenatis justo. Integer accumsan elit risus, eu imperdiet velit cursus et. Duis porttitor eros vitae porttitor ornare. Mauris ac erat ac ligula posuere vulputate. Aliquam eu metus ultricies, ullamcorper eros non, finibus quam.",
         "anchorText": "CLICK HERE PLEASE",
         "anchorHREF": "/#"
+    },
+    "aboutPage": {
+        "firstLine": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices elit quis neque malesuada, et pharetra lectus facilisis. Sed consequat ut turpis eu maximus. Curabitur facilisis maximus purus et semper. Donec odio ex, euismod vitae felis at, rutrum iaculis ante. Aliquam quis orci non leo fringilla egestas a in enim. In semper dolor sed ipsum ornare, eu aliquam purus iaculis. Vestibulum dictum vitae tellus vel consequat. Pellentesque nunc elit, bibendum a feugiat et, tristique nec libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam lectus sem, accumsan eget porttitor non, viverra ac sapien. Duis aliquam euismod est sed dapibus. Nam urna nisi, viverra id pellentesque in, placerat ut lorem.",
+        "secondLine": " Sed convallis vel purus quis luctus. Vestibulum sollicitudin mauris eu diam suscipit auctor. Aliquam fermentum nisl venenatis sem laoreet, eu porta mauris venenatis. Nulla facilisi. Mauris placerat quam laoreet, sollicitudin nunc aliquet, egestas neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sed dui vitae lectus pulvinar venenatis. Ut vel rhoncus ipsum."
     }
 }

@@ -15,6 +15,7 @@ import img1 from '../photos/homepage/slideshow1.jpg';
 import img2 from '../photos/homepage/slideshow2.jpg';
 import img3 from '../photos/homepage/slideshow3.jpg';
 import img4 from '../photos/homepage/slideshow4.jpg';
+import Footer from '../components/footer';
 
 export default function Homepage () {
     
@@ -58,7 +59,7 @@ export default function Homepage () {
    
 
     return(
-        <div id='homepageWrapper'>            
+        <div id='homepageWrapper'>    
             <FullscreenSlider images={images}/>   
 
             <h1 className='openingHeader boldHeader' onClick={() => scrollDown(viewportSize.height)}>
@@ -80,6 +81,8 @@ export default function Homepage () {
             <BlogPost imgSource={image4} content={texts.blogPost1} photoOnLeft={true}/>
 
             <BlogPost imgSource={image9} content={texts.blogPost1} photoOnLeft={false}/>
+
+            <Footer />
         </div>
     );
 };

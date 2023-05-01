@@ -24,6 +24,7 @@ export default function BlogPost({imgSource, content, photoOnLeft}) {
         </>
         }
         <div className={`blogPostTextWrapper ${photoOnLeft ? 'alignLeft' : 'alignRight'}`}>
+
             <h2 className='homepageHeader'>
                 {content['title'].normal}
                 <span className='transparentText'>

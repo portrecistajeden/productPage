@@ -1,0 +1,16 @@
+.aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutTextsWrapper {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 250px;
+}

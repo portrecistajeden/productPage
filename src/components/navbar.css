@@ -6,4 +6,43 @@
     height: 80px;
     z-index: 3;
     transition: background-color 0.6s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+}
+
+.transparentNavbar {
+    background-color: transparent;
+}
+
+.visibleNavbar {
+    background-color: black;
+}
+
+.navlink {
+    color: var(--font-color-secondary);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 2em;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 0.2rem;
+    transition: 0.3s;
+}
+
+.navlink:hover {
+    color: var(--accent-color);
+}
+
+
+.navbarLogo {
+    height: 40px;
+    width: auto;
+    -webkit-filter: drop-shadow(2px 2px 5px black);
+    filter: drop-shadow(2px 2px 5px black);
 }
