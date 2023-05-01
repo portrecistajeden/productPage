@@ -1,36 +1,22 @@
+import { useElementOnScreen } from '../customHooks';
 import './blogPost.css';
-
-import { useEffect } from 'react';
 
 export default function BlogPost({imgSource, content, photoOnLeft}) {
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if(entry.isIntersecting) {
-                entry.target.classList.add('showBlogPost');  
-                entry.target.classList.remove('hiddenBlogPost');              
-            }
-            else {
-                entry.target.classList.remove('showBlogPost');
-                entry.target.classList.add('hiddenBlogPost'); 
-            }
-        });
-    }
-    );  
-
-    useEffect(() =>{
-        const hiddenElements = document.querySelectorAll('.hiddenBlogPost');
-        hiddenElements.forEach((element) => {observer.observe(element)});
-    }, [])
+    const [containerRef, isVisible] = useElementOnScreen({
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.4
+    })
 
     return( 
-    <div className='blogPostWrapper'>
+    <div ref={containerRef} className='blogPostWrapper'>
         {photoOnLeft ? 
         <>
-        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} hiddenBlogPost`}>
+        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
         </div>
-        <div className='blogPostImage'>
-                <img src={imgSource} />
+        <div className={`blogPostImage`}>
+                <img className={`${isVisible ? 'showImg' : 'hiddenImg'}`} src={imgSource} />
         </div> 
         </>
         : 
@@ -56,10 +42,10 @@ export default function BlogPost({imgSource, content, photoOnLeft}) {
         </>            
         : 
         <>
-        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} hiddenBlogPost`}>
+        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
         </div>
-        <div className='blogPostImage'>
-                <img src={imgSource} />
+        <div className={`blogPostImage`}>
+                <img className={`${isVisible ? 'showImg' : 'hiddenImg'}`} src={imgSource} />
         </div> 
         </>
         }

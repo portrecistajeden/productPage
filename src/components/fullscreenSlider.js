@@ -31,8 +31,8 @@ export default function FullscreenSlider({images}) {
     return (
         <div className='slideShow homeGallerySlideShow'>
                 <div className='slideShowSlider' style={{transform: `translate3d(${-index * 100}%, 0, 0)`}}>
-                    {images.map((_, idx) => 
-                        <img className={`slide homeGallerySlide ${index === idx ? "activeSlide" : ""}`} key={idx} src={require(`../photos/homepage/${images[idx]}`)}/>
+                    {images.map((elem, idx) => 
+                        <img className={`slide homeGallerySlide ${index === idx ? "activeSlide" : ""}`} key={idx} src={elem}/>
                     )}
                 </div>
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -21,6 +22,7 @@ export default function Navbar() {
     return (
         <div id='navbar' style={{backgroundColor: `rgba(0, 0, 0, ${transparent ? '1' : '0'})`}}>
             Navbar
+            <Link to='/products'>Products</Link>
         </div>
     );
 }

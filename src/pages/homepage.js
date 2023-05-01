@@ -11,15 +11,16 @@ import image4 from '../photos/latest/latest4.jpg';
 import image9 from '../photos/latest/latest9.jpg';
 import texts from '../texts/homepageTexts.json';
 import BlogPost from '../components/blogPost';
+import img1 from '../photos/homepage/slideshow1.jpg';
+import img2 from '../photos/homepage/slideshow2.jpg';
+import img3 from '../photos/homepage/slideshow3.jpg';
+import img4 from '../photos/homepage/slideshow4.jpg';
 
 export default function Homepage () {
     
     const viewportSize = useWindowSize();
 
-    const images = ['slideshow1.jpg',
-                    'slideshow2.jpg',
-                    'slideshow3.jpg',
-                    'slideshow4.jpg'];
+    const images = [img1, img2, img3, img4];
 
     const scrollDown = (y) => {
         window.scrollTo({

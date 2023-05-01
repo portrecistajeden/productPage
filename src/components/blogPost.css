@@ -12,44 +12,52 @@
 }
 
 .hiddenBlogPost {
-    transform: translate(-5%, 10%) rotate(-20deg);
+    transform: translate(-5%, 8%) rotate(-10deg);
 }
 
-.showBlogPost { 
-    transition: transform 1s ease-out; 
+
+.hiddenImg {
+    filter:opacity(0);
+}
+
+.showImg {
+    filter: opacity(1);
 }
 
 .blogPostImage {
     width: 50vw;
     height: 50vw;
+    transition: transform 1.5s ease-out; 
 }
 
 .blogPostImage img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: 0.3s ;
 }
 
 .imageFrame {
     background-color: transparent;
-    border: 100vw solid var(--background-color);
+    border: 30vw solid var(--background-color);
     position: absolute;
-    top: -100vw;
+    top: -30vw;
+    z-index: 1;
 }
 
 .frameLeft {
-    left: -100vw;
+    left: -30vw;
 }
 
 .frameRight {
-    right: -100vw;
+    right: -30vw;
 }
 
 
 .blogPostTextWrapper {
     width: 30vw;
     height: auto;
-    z-index: 1;
+    z-index: 2;
 }
 
 .alignLeft {
