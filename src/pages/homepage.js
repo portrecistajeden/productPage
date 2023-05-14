@@ -65,7 +65,6 @@ export default function Homepage () {
             <h1 className='openingHeader boldHeader' onClick={() => scrollDown(viewportSize.height)}>
                 <span className='transparentText'>MODERN</span> PHOTOGRAPHY
                 <br/>BEGINS <span className='transparentText'>HERE</span>
-                <br/>↓
             </h1>
 
             <h2 className='homepageHeader' id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>

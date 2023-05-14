@@ -6,7 +6,6 @@
     align-items: center;
     height: 50vw;
     width: 85vw;
-    min-width: 820px;
     margin: 0 auto 80px auto;
     overflow: hidden;
 }
@@ -87,4 +86,13 @@
     .blogPostAnchor {        
         font-size: 0.8em;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .blogPostText {
+        font-size: 0.8em;
+        line-height: 1em;
+        margin-bottom: 1em;
+    }   
+
 }

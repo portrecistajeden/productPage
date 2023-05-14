@@ -11,7 +11,7 @@
 .boldHeader {
     font-weight: 600;
     letter-spacing: 0.2rem;
-    -webkit-text-stroke: 5px black;
+    -webkit-text-stroke: 3px black;
     text-shadow: 0px 0px 40px white;    
 }
 
@@ -19,7 +19,7 @@
     font-weight: 600;
     letter-spacing: 0.2rem;
     color: white;
-    -webkit-text-stroke: 3px white;
+    -webkit-text-stroke: 1px white;
     text-shadow: 0px 0px 40px black;    
 }
 
@@ -29,7 +29,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 4.5em;
+    font-size: 3em;
     transition: 0.3s ease-in;
     cursor: pointer;
 }
@@ -50,5 +50,19 @@
     }
     .homepageHeader {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .openingHeader {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .homepageHeader {
+        font-size: 1em;
+        
+    -webkit-text-stroke: 1px black;
     }
 }

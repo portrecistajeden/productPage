@@ -1,12 +1,12 @@
 .gridGalleryWrapper {
-    height: 1600px;
+    height: auto;
 }
 
 .gridGallery {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-auto-rows: 300px;
-    width: 1200px;
+    grid-template-columns: repeat(4, 15svw);
+    grid-auto-rows: 15svw;
+    width: 60svw;
     margin: 0 auto;
 }
 
@@ -55,4 +55,12 @@
     left: 10px;
     font-size: 2em;
     color: var(--font-color-secondary);
+}
+
+@media screen and (max-width: 1100px) {
+    .gridGallery {
+        grid-template-columns: repeat(4, 22.5vw);
+        grid-auto-rows: 22.5vw;
+        width: 90vw;
+    }
 }
