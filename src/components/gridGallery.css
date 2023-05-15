@@ -51,8 +51,8 @@
 .gridItemText {
     margin: 0;
     position: relative;
-    bottom: 60px;
-    left: 10px;
+    bottom: 3rem;
+    left: 1rem;
     font-size: 2em;
     color: var(--font-color-secondary);
 }
@@ -62,5 +62,22 @@
         grid-template-columns: repeat(4, 22.5vw);
         grid-auto-rows: 22.5vw;
         width: 90vw;
+    }
+
+    .wrapper {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .gridItemText {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gridItemText {
+        font-size: 1em;
+        bottom: 3rem;
     }
 }
