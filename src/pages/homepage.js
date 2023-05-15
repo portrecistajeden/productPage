@@ -75,7 +75,7 @@ export default function Homepage () {
 
             <GridGallery galleryItems={galleryItems}/>      
 
-            <Banner imgSource={image6} bannerWidth='70vw' bannerContent={texts.banner1} transparentWords={['STORY', 'TRULLY']}/>    
+            <Banner imgSource={image6} bannerContent={texts.banner1} transparentWords={['STORY', 'TRULLY']}/>    
 
             <BlogPost imgSource={image4} content={texts.blogPost1} photoOnLeft={true}/>
 

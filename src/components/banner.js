@@ -1,7 +1,7 @@
 import './banner.css'
 import { useEffect } from 'react';
 
-export default function Banner({imgSource, bannerWidth, bannerContent}) {
+export default function Banner({imgSource, bannerContent}) {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -26,8 +26,8 @@ export default function Banner({imgSource, bannerWidth, bannerContent}) {
     return(
         <div className='bannerContainer'>
 
-            <div className='bannerWrapper hiddenBanner' style={{width: bannerWidth}}>
-                <img src={imgSource}/>
+            <div className='bgImage' style={{backgroundImage:`url(${imgSource})`}}></div>
+            <div className='bannerWrapper hiddenBanner' >
                 <h2 className='boldHeaderWhite'>
                     {bannerContent['firstLine'].normal} <span className='transparentText'>{bannerContent['firstLine'].transparent}</span>
                 </h2>
