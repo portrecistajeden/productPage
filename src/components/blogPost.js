@@ -13,11 +13,11 @@ export default function BlogPost({imgSource, content, photoOnLeft}) {
     <div ref={containerRef} className='blogPostWrapper'>
         {photoOnLeft ? 
         <>
-        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
-        </div>
-        <div className={`blogPostImage`}>
+            <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
+            </div>
+            <div className={`blogPostImage`}>
                 <img className={`${isVisible ? 'showImg' : 'hiddenImg'}`} src={imgSource} />
-        </div> 
+            </div> 
         </>
         : 
         <>
@@ -43,11 +43,11 @@ export default function BlogPost({imgSource, content, photoOnLeft}) {
         </>            
         : 
         <>
-        <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
-        </div>
-        <div className={`blogPostImage`}>
+            <div className={`blogPostImage imageFrame ${photoOnLeft ? 'frameLeft' : 'frameRight'} ${isVisible ? '' : 'hiddenBlogPost'}`}>
+            </div>
+            <div className={`blogPostImage`}>
                 <img className={`${isVisible ? 'showImg' : 'hiddenImg'}`} src={imgSource} />
-        </div> 
+            </div> 
         </>
         }
     </div>

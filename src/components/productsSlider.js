@@ -20,6 +20,10 @@ export default function ProductsSlider({products}) {
     let latestProductMargin = (windowSize - Math.floor(windowSize/latestProductWidth) * latestProductWidth)/(Math.floor(windowSize/latestProductWidth) * 2);
 
     useEffect(() => {
+        setWindowSize(document.documentElement.clientWidth);
+    }, [])
+
+    useEffect(() => {
         const handleWindowResize = () => {
             setWindowSize([document.documentElement.clientWidth]);
             dots = getDotsArray(Math.ceil(10/Math.floor(windowSize/latestProductWidth)));

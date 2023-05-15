@@ -67,9 +67,9 @@ export default function Homepage () {
                 <br/>BEGINS <span className='transparentText'>HERE</span>
             </h1>
 
-            <h2 className='homepageHeader' id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>
+            {/* <h2 className='homepageHeader' id='latestProducts'><span className='transparentText'>LATEST</span> PRODUCTS</h2>
 
-            <ProductsSlider products={latestItems}/> 
+            <ProductsSlider products={latestItems}/>  */}
 
             <h2 className='homepageHeader'>SHOP BY <span className='transparentText'>CATEGORY</span></h2>
 
