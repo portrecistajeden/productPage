@@ -77,7 +77,7 @@ export default function Homepage () {
 
             <Banner imgSource={image6} bannerContent={texts.banner1} transparentWords={['STORY', 'TRULLY']}/>    
 
-            <BlogPost imgSource={image4} content={texts.blogPost1} photoOnLeft={true}/>
+            <BlogPost imgSource={img1} content={texts.blogPost1} photoOnLeft={true}/>
 
             <BlogPost imgSource={image9} content={texts.blogPost1} photoOnLeft={false}/>
 

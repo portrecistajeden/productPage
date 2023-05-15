@@ -6,8 +6,8 @@
     align-items: center;
     height: 50vw;
     width: 85vw;
-    margin: 0 auto 80px auto;
     overflow: hidden;
+    margin: 1em auto;
 }
 
 .hiddenBlogPost {
@@ -24,7 +24,7 @@
 }
 
 .blogPostImage {
-    width: 50vw;
+    width: 40vw;
     height: 50vw;
     transition: transform 1.5s ease-out; 
 }
@@ -38,23 +38,23 @@
 
 .imageFrame {
     background-color: transparent;
-    border: 30vw solid var(--background-color);
+    border: 40vw solid var(--background-color);
     position: absolute;
-    top: -30vw;
+    top: -40vw;
     z-index: 1;
 }
 
 .frameLeft {
-    left: -30vw;
+    left: -40vw;
 }
 
 .frameRight {
-    right: -30vw;
+    right: -40vw;
 }
 
 
 .blogPostTextWrapper {
-    width: 30vw;
+    width: 40vw;
     height: auto;
     z-index: 2;
 }
