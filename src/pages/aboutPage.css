@@ -10,7 +10,13 @@
     grid-template-columns: 30vw 30vw;
     -webkit-column-gap: 3em;
     column-gap: 3em;
-    text-align: left;
+    text-align: justify;
     justify-content: center;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 650px) {
+    .aboutTextsWrapper {
+        grid-template-columns: 90vw;
+    }
 }

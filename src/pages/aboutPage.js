@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 export default function AboutPage() {
     return (
         <div className="aboutWrapper">
-            <span style={{height: '250px', width: '90vw'}}></span>
+            <span style={{height: '200px', width: '90vw'}}></span>
             <h2 className='homepageHeader'>ABOUT <span className='transparentText'>FUJIFILM</span></h2>   
             <div className='aboutTextsWrapper'>
                 <p>
